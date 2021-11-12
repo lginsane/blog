@@ -10,10 +10,10 @@ tags:
 ## 下载
 
 - [官方下载地址](https://git-scm.com/downloads)
+- [官方命令使用文档](https://git-scm.com/book/zh/v2)
 
 ## 初始化和配置
 
-- [官方命令使用文档](https://git-scm.com/book/zh/v2)
 - 初始化
 
 ```初始化
@@ -71,6 +71,28 @@ git config --global user.email 你的邮箱
 
 > 注：当合并分支出现冲突时，请手动修改冲突
 
+## 临时存储
+
+- 添加到临时存储，`描述`为当前临时存储信息的描述。不携带`save "描述"`，默认为`save "上一次提交的commit的描述"`
+  ```git stash```
+  ```git stash save "描述"```
+
+- 查看存储列表
+  ```git stash list```
+
+- 取出存储。区别：`apply`取出不删除记录。`pop`取出并删除记录
+  ```git stash pop stash@{$num}```
+  ```git stash apply stash@{$num}```
+
+- 删除存储。`drop`删除某条，`clear`删除所有
+  ```git stash drop stash@{$num}```
+  ```git stash clear```
+
+- 显示某条存储diff
+  ```git stash show stash@{$num}```
+
+> 注：不携带`stash@{$num}`默认都是第一个，使用`stash@{$num}`区别每一条存储。
+
 ## 版本回退(后悔药)
 
 - 查看提交日志
@@ -97,3 +119,34 @@ git config --global user.email 你的邮箱
 2. 问题描述：提交不符合规范的代码时，husky代码检查会报以下错误：`husky - pre-push hook failed (add --no-verify to bypass)`
   解决方案：绕过 husky 中的`pre-commit`和`commit-msg`钩子：`--no-verify`
   举个例子： `git commit --no-verify -m "说明"`
+
+3. 其他问题：
+
+- 解除合并状态:
+  ```git merge --abort```
+
+- 删除远程仓库文件
+  ```git rm filename```
+  ```git rm --cached filename```
+
+- 合并分支将所有commit合成一个commit
+  ```git merge 分支名 --squash```
+
+- 查看git安装目录
+  ```which git```
+  ```where git```
+
+## SSH key
+
+> 使用ssh开发可以避免很多问题
+
+1. 生成公钥（一路回车）
+```ssh-keygen -t rsa -C "你的邮箱"```
+
+2. 查看公钥
+```cat ~/.ssh/id_rsa.pub```
+
+3. 将生成的公钥添加到git服务器
+
+4. 检测是否连接成功
+```ssh -T git@github.com```
