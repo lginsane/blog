@@ -5,6 +5,7 @@ description: 常用的包管理工具总结
 tags:
     - n
     - nrm
+categories: 工具
 ---
 
 ## 包安装源管理工具 nrm
