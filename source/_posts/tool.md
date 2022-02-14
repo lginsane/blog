@@ -8,7 +8,7 @@ tags:
 categories: 工具
 ---
 
-## 一、包管理工具 npm
+## 包管理工具 npm
 
 ### 安装
 
@@ -27,7 +27,7 @@ npm uninstall xx
 
 - 发布NPM包
 
-<font color='red'> 注意: 发布包时必须是 npm 源。通过 `二、包安装源管理工具 nrm` 查看 </font>
+<font color='red'> 注意: 发布包时必须是 npm 源。通过 `包安装源管理工具 nrm` 查看命令 </font>
 
 ```发布NPM包
 # 初始化
@@ -42,7 +42,7 @@ npm unpublish 包名@版本号
 npm version patch
 ```
 
-## 二、包安装源管理工具 nrm
+## 包安装源管理工具 nrm
 
 ### 安装
 
@@ -68,7 +68,7 @@ nrm add [name] [url] [home]
 nrm del [name]
 ```
 
-## 三、node管理工具 n
+## node管理工具 n
 
 ### 安装
 
