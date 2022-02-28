@@ -3,8 +3,8 @@ title: MongoDB入门
 date: 2021-11-12 18:34:12
 description: 基于分布式文件存储的数据库
 tags:
-    - mongodb
-categories: 数据库
+    - 数据库
+categories: 入门知识
 ---
 
 ### 可视化工具
