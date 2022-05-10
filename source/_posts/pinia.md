@@ -3,6 +3,7 @@ title: Pinia 入门
 date: 2022-05-06 16:17:59
 description: Pinia 是 Vue 的存储库，允许跨组件/页面共享状态
 tags:
+categories: 入门知识
 ---
 ## 介绍
 
