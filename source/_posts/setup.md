@@ -112,6 +112,8 @@ defineExpose({
 
 如上所示，只有使用`defineExpose`暴露的属性`b`，在ref实例中可以拿到。`a`属性没有暴露，则为`undefined`
 
+> 常见问题: 如果没有使用`defineExpose`暴露出来，打印只会显示`{_v_skin:true}`这一个信息
+
 ### useSlots 和 useAttrs
 
 在 `<script setup>` 使用 slots 和 attrs 的情况应该是很罕见的，因为可以在模板中通过 `$slots` 和 `$attrs` 来访问它们。在你的确需要使用它们的罕见场景中，可以分别用 `useSlots` 和 `useAttrs` 两个辅助函数
