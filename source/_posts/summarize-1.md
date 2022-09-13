@@ -4,7 +4,7 @@ date: 2021-12-29 15:33:30
 description: 回顾一下自己的混沌人生！
 tags:
   - 个人总结
-categories: 情感日记
+categories: 总结
 ---
 
 ![src=http___img.zcool.cn_community_01cd995a2a5fd5a80120ba38658529.png@1280w_1l_2o_100sh.png&refer=http___img.zcool.jpeg](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7c991c7b35074038b6f1752f6cecf453~tplv-k3u1fbpfcp-watermark.image?)
