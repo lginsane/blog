@@ -137,6 +137,13 @@ git config --global user.email 你的邮箱
   ```which git```
   ```where git```
 
+4. 问题描述：git clone 报错443
+  解决方案：
+  ```
+  git config --global http.lowSpeedLimit 0
+  git config --global http.lowSpeedTime 999999
+  ```
+
 ## SSH key
 
 > 使用ssh开发可以避免很多问题
